@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SIC Myanmar</string>
+    <string name="title_activity_encrypt_image">EncryptImage</string>
+    <string name="text">For text</string>
+    <string name="image">For Image</string>
+</resources>

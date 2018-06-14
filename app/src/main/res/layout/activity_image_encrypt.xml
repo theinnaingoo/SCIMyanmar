@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3e5fc"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center">
+
+            <TextView
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Select image to encrypt "/>
+
+            <ImageView
+                android:paddingTop="5dp"
+                android:id="@+id/source"
+                android:layout_height="200dp"
+                android:layout_width="200dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Result will appear below"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:id="@+id/tv"/>
+
+            <ImageView
+                android:layout_height="200dp"
+                android:layout_width="250dp"
+                android:id="@+id/iv"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/radio_gp"
+                    >
+                    <RadioButton android:id="@+id/rdo_en"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:text="For Encrypt"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/rdo_de"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="For Decrypt"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|bottom"
+                android:layout_margin="5dp"
+                android:weightSum="3">
+                <Button
+                    android:layout_marginRight="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Process"
+                    android:layout_weight="1"
+
+                    android:background="@color/btn_back"
+                    android:id="@+id/btn_en"
+                    android:onClick="onClick"
+
+                    />
+
+                <Button
+                    android:background="@color/btn_back"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Save Result"
+
+                    android:layout_weight="1"
+                    android:id="@+id/btn_save"
+                    android:onClick="onClick"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

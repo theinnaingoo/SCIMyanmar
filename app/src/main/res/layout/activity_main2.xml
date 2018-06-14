@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity"
+    android:background="#b3e5fc"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="encryptClick"
+            android:id="@+id/encrypt"
+            android:background="#FFFFFF"
+            android:text="Encrypy"/>
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+
+            android:background="#9e9e9e" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/decrypt"
+            android:onClick="decryptClick"
+            android:background="#FFFFFF"
+            android:text="Decrypt "/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:id="@+id/copy"
+            android:src="@drawable/ic_copy"/>
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#9e9e9e" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_paste"
+            android:background="#FFFFFF"
+            android:id="@+id/paste"
+            android:layout_weight="1"/>
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#9e9e9e" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            android:background="#FFFFFF"
+            android:id="@+id/share"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/et1"
+            android:layout_weight="1"
+            android:hint="Enter your text."
+            android:gravity="top"
+            android:background="#FFFFFF"/>
+        <EditText
+            android:hint="Result text."
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/et2"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
